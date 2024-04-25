@@ -205,9 +205,9 @@ form input {
     letter-spacing: 1.5px;
 }
 
-ul svg, li:hover {
+ul svg:hover, li:hover {
     cursor: pointer;
-    -webkit-transform: scale(1.03);
+    -webkit-transform: scale(1.09);
     text-decoration: underline;
 }
 
@@ -256,7 +256,7 @@ article {
 
 .card:hover {
     cursor: pointer;
-    -webkit-transform: scale(1.03);
+    -webkit-transform: scale(1.01);
 
 }
 
@@ -313,6 +313,12 @@ article {
     position: relative;
     top: 17px;
 }
+
+.title-1:hover, .title-2:hover, .title-3:hover, .title-4:hover, .title-5:hover, .title-6:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.01);
+    text-decoration: underline;
+  }
 
 .title-4, .title-5, .title-6 {
     position: relative;
