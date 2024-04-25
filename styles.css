@@ -205,6 +205,12 @@ form input {
     letter-spacing: 1.5px;
 }
 
+ul svg, li:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.03);
+    text-decoration: underline;
+}
+
 .additional_info {
     color: var(--aside-color);
     display: grid;
@@ -251,7 +257,7 @@ article {
 .card:hover {
     cursor: pointer;
     -webkit-transform: scale(1.03);
-    
+
 }
 
 
@@ -271,7 +277,7 @@ article {
 
 .app-1 {
     grid-area: 2 / 1 / 4 / 2;
-    
+
 }
 
 .app-2 {
@@ -294,16 +300,16 @@ article {
 
 .app-6 {
     grid-area: 5 / 2 / 6 / 3;
-    
+
 }
 
 .app-1, .app-2, .app-3, .app-4, .app-5, .app-6 {
     box-shadow: -6px 0px 0px 0px #facc15;
-   
+
 
 }
 
-.title-1, .title-2, .title-3  {
+.title-1, .title-2, .title-3 {
     position: relative;
     top: 17px;
 }
@@ -323,6 +329,7 @@ article {
     border-bottom: 1px solid #888;
     margin: 8px;
 }
+
 .trend-title {
     font-size: 18px;
     padding-left: 20px;
@@ -342,7 +349,7 @@ article {
 .comment {
     color: var(--article-text-color);
     font-size: 14px;
-    
+
 
 }
 
