@@ -137,6 +137,50 @@
         width: 78px;
     }
 
+    #toggleMenuIcon {
+        position: fixed;
+        top: 70px;
+        right: 6px;
+        width: 50px;
+        height: 50px;
+        background-color: #38bdf8;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        transition: top 0.3s;
+        z-index: 1000;
+    }
+
+    header #toggleMenuIcon::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: #fff;
+        transform: translateY(-5px);
+        transition: 0.2s;
+    }
+
+    header #toggleMenuIcon::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: #fff;
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+
+    #toggleMenuIcon.active::before {
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    #toggleMenuIcon.active::after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+
 
     main #side-bar {
         background-color: #0ea5e9;
