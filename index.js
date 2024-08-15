@@ -15,3 +15,19 @@ function removeSideBarOnPageClick(e) {
   }
 }
 document.addEventListener("click", removeSideBarOnPageClick);
+
+let prevScrollPos = window.scrollY;
+
+
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    
+    document.querySelector("#toggleMenuIcon").style.top = "24px";
+  } else {
+    
+    document.querySelector("#toggleMenuIcon").style.top = "-80px";
+  }
+  prevScrollPos = currentScrollPos;
+};
