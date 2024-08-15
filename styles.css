@@ -184,14 +184,26 @@
 
     main #side-bar {
         background-color: #0ea5e9;
-        display: none;
+        position: fixed;
+        top: 0;
+        display: flex;
+        left: -240px;
+        width: 240px;
+        height: 100vh;
         grid-area: 1 / 1 / 4 / 2;
         grid-template-columns: 20px 1fr;
         padding: 15px 0px 0 40px;
         gap: 10px;
         z-index: 1000;
+        transition: 0.5s;
 
     }
+
+    main #side-bar.active {
+        left: 0;
+
+    }
+
 
     main article {
         background-color: #bccbde;
