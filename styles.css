@@ -476,53 +476,53 @@
         background-color: #bccbde;
         grid-area: 2 / 1 / 4 / 2;
         display: grid;
-        grid-template: 200px / auto;
+        grid-template: 70px 250px 250px 250px 130px 150px 150px / repeat(2, minmax(100px, 400px));
     }
 
     div.nav {
-        display: none;
+        /* display: none; */
         grid-area: 1 / 1 / 2 / 3;
         flex-direction: column;
 
     }
 
     div.app-1 {
-        grid-area: 1 / 1 / 3 / 3;
+        grid-area: 2 / 1 / 3 / 2;
 
     }
 
     div.app-2 {
-        grid-area: 3 / 1 / 4 / 3;
+        grid-area: 2 / 2 / 3 / 3;
 
     }
 
     div.app-3 {
-        grid-area: 4 / 1 / 5 / 3;
+        grid-area: 3 / 1 / 4 / 2;
 
     }
 
     div.app-4 {
-        grid-area: 5 / 1 / 6 / 3;
+        grid-area: 3 / 2 / 4 / 3;
 
     }
 
     div.app-5 {
-        grid-area: 6 / 1 / 7 / 3;
+        grid-area: 4 / 1 / 6 / 2;
 
     }
 
     div.app-6 {
-        grid-area: 7 / 1 / 8 / 3;
+        grid-area: 5 / 1 / 6 / 2;
 
     }
 
     div.trends {
-        grid-area: 8 / 1 / 10 / 3;
+        grid-area: 6 / 2 / 7 / 3;
 
     }
 
     div.card.announcements {
-        grid-area: 10 / 1 / 11 / 3;
+        grid-area: 4 / 2 / 6 / 3;
         height: 350px;
         max-width: 300px;
         display: flex;
@@ -538,7 +538,7 @@
     }
 
     div.card.trending {
-        height: 338px;
+        height: 250px;
         max-width: max-content;
         margin: auto;
     }
@@ -546,10 +546,10 @@
     div.card {
         display: grid;
         background-color: #FFFFFF;
-        height: 200px;
-        padding: 20px;
+        height: 220px;
+        padding: 25px;
         border-radius: 10px;
-        margin: 15px 40px;
+        /* margin: 15px 40px; */
     }
 
 
@@ -572,6 +572,16 @@ main {
 }
 
 
+header {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+#side-bar {
+   
+        grid-area: 1 / 1 / 4 / 2;
+        background-color: #0ea5e9;
+    
+}
 
 article {
     background-color: #bccbde;
