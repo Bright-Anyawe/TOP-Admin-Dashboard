@@ -261,13 +261,10 @@
 
     }
 
-    div.trends {
-        grid-area: 8 / 1 / 10 / 3;
-
-    }
 
     div.card.announcements {
-        grid-area: 10 / 1 / 11 / 3;
+                grid-area: 8 / 1 / 10 / 3;
+
         height: 350px;
         max-width: 300px;
         display: flex;
@@ -275,6 +272,10 @@
         justify-self: center;
     }
 
+     div.trends {
+        grid-area: 10 / 1 / 11 / 3;
+
+    }
 
     h4.trend-title {
         font-size: 1.3rem;
@@ -404,7 +405,7 @@
 
     div.updates {
         display: grid;
-        grid-template-columns: repeat(3, 16%);
+        grid-template-columns: repeat(3, 23%);
         grid-template-rows: 20px;
         gap: 0px;
         margin: 0 0 0 30px;
@@ -554,20 +555,20 @@
 
     }
 
-    div.trends {
-        grid-area: 4 / 2 / 6 / 3;
-
-    }
-
+    
     div.card.announcements {
-        grid-area: 5 / 2 / 7 / 3;
+                grid-area: 4 / 2 / 6 / 3;
         height: 350px;
         max-width: 300px;
         display: flex;
         flex-direction: column;
         justify-self: center;
     }
+    
+    div.trends {
+        grid-area: 6 / 2 / 7 / 3;
 
+    }
 
     h4.trend-title {
         font-size: 1.3rem;
@@ -783,8 +784,8 @@
         height: 100vh;
         grid-area: 1 / 1 / 4 / 2;
         grid-template-columns: 20px 1fr;
-        padding: 15px 0px 0 40px;
-        gap: 10px;
+        padding: 15px 0px 0 8px;
+                gap: 10px;
         z-index: 1000;
         transition: 0.5s;
 
@@ -863,7 +864,7 @@
     }
 
     div.card.trending {
-        height: 310px;
+        height: 325px;
         max-width: 290px;
         margin: auto;
     }
@@ -964,7 +965,7 @@ form button {
 
 form svg {
     width: 25px;
-    background: white;
+    background: inherit;
 }
 
 form input {

@@ -24,7 +24,7 @@ window.onscroll = function () {
 
   if (prevScrollPos > currentScrollPos) {
     
-    document.querySelector("#toggleMenuIcon").style.top = "30";
+    document.querySelector("#toggleMenuIcon").style.top = "30px";
   } else {
     
     document.querySelector("#toggleMenuIcon").style.top = "-80px";
