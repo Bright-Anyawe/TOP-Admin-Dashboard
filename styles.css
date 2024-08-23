@@ -751,7 +751,7 @@ grid-template-columns: 2fr 22px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 8px;
+        border-radius: 5px;
         transition: top 0.3s;
         z-index: 1000;
     }
